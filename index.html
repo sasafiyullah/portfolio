@@ -13,8 +13,8 @@
         .section-title { border-bottom: 2px solid #0078d4; padding-bottom: 0.5rem; margin-top: 2.5rem; margin-bottom: 1.5rem; color: #0078d4; font-weight: bold; text-transform: uppercase; }
         .card { border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 12px; }
         .badge-skill { background-color: #e1f0ff; color: #0078d4; margin: 0.2rem; font-weight: 500; padding: 0.6em 0.9em; border-radius: 20px; display: inline-block; }
-        .btn-download { background-color: #ffaa00; border: none; color: #222; font-weight: bold; padding: 12px 30px; border-radius: 30px; transition: 0.3s; }
-        .btn-download:hover { background-color: #e69900; transform: translateY(-2px); }
+        .btn-download { background-color: #ffaa00; border: none; color: #222; font-weight: bold; padding: 12px 30px; border-radius: 30px; transition: 0.3s; text-decoration: none; }
+        .btn-download:hover { background-color: #e69900; transform: translateY(-2px); color: #000; }
         .contact-link { color: white; text-decoration: none; margin: 0 10px; }
         .contact-link:hover { text-decoration: underline; }
         ul li { margin-bottom: 10px; }
@@ -51,8 +51,7 @@
                     <span class="badge-skill">Azure Compute</span>
                     <span class="badge-skill">Kubernetes (AKS)</span>
                     <span class="badge-skill">Azure Storage</span>
-                    <span class="badge-skill">Microsoft Entra</span>
-                    <span class="badge-skill">Microsoft Conditional Access Policy</span>
+                    <span class="badge-skill">Microsoft Entra ID</span>
                     
                     <h6 class="text-muted small fw-bold mt-3 text-uppercase">DevOps</h6>
                     <span class="badge-skill">Terraform</span>
@@ -61,10 +60,9 @@
                     <span class="badge-skill">CI/CD Pipelines</span>
                     
                     <h6 class="text-muted small fw-bold mt-3 text-uppercase">Networking</h6>
-                    <span class="badge-skill">Network Security Group</span>
                     <span class="badge-skill">VNet Peering</span>
-                    <span class="badge-skill">App Gateway</span>
-                    <span class="badge-skill">Azure Load Balancer</span>
+                    <span class="badge-skill">App Gateway & WAF</span>
+                    <span class="badge-skill">ExpressRoute</span>
                     <span class="badge-skill">Azure Firewall</span>
                 </div>
             </div>
@@ -72,8 +70,8 @@
             <div class="card p-4">
                 <h3 class="h5 mb-3 fw-bold">Certifications</h3>
                 <ul class="list-unstyled mb-0">
-                    <li><i class="fas fa-check text-primary me-2"></i>AZ-104: Administrator</li>
-                    <li><i class="fas fa-check text-primary me-2"></i>AZ-700: Networking</li>
+                    <li><i class="fas fa-check text-primary me-2"></i>AZ-104: Azure Administrator</li>
+                    <li><i class="fas fa-check text-primary me-2"></i>AZ-700: Azure Networking</li>
                     <li><i class="fas fa-check text-primary me-2"></i>AZ-500: Security Engineer</li>
                     <li><i class="fas fa-check text-primary me-2"></i>AWS Cloud Practitioner</li>
                 </ul>
@@ -83,7 +81,7 @@
         <div class="col-lg-8">
             <section>
                 <h2 class="section-title">Summary</h2>
-                <p class="lead">Senior Azure Cloud Infrastructure & DevOps Engineer with 4+ years of experience designing and securing enterprise Azure environments. Expert in <strong>Infrastructure as Code (Terraform)</strong> and automation, with a track record of saving <strong>$20K+ AUD</strong> in storage costs through governance initiatives.</p>
+                <p class="lead">Senior Azure Cloud Infrastructure & DevOps Engineer with 4+ years of experience designing, automating, and securing enterprise-grade Azure and Hybrid environments. Proven expertise in Infrastructure as Code (Terraform, PowerShell), CI/CD pipeline design, and cloud security measures. Recognized for driving operational excellence, including governance initiatives that saved <strong>$20K+ AUD </strong>in storage costs. Skilled in monitoring and observability solutions ensuring <strong>99.9% uptime</strong> and proactive incident resolution.</p>
             </section>
 
             <section>
@@ -96,9 +94,9 @@
                     </div>
                     <p class="text-primary fw-bold">Wipro Technologies</p>
                     <ul>
-                        <li>Lead a team of 12 engineers in daily operations and P1/P2 incident resolution.</li>
-                        <li>Architected secure network topologies using NSGs, App Gateways, and ExpressRoute.</li>
-                        <li>Reduced recurring incidents by 20% through proactive Root Cause Analysis (RCA).</li>
+                        <li>Coordinate a team of 12 engineers in daily operations and P1/P2 resolution.</li>
+                        <li>Manage RBAC and IAM via Microsoft Entra ID and architect secure network topologies.</li>
+                        <li>Reduced recurring incidents by 20% through preventative fix-actions and RCA.</li>
                     </ul>
                 </div>
 
@@ -111,17 +109,34 @@
                     <ul>
                         <li>Managed 2500+ Azure VMs, using PowerShell to reduce manual maintenance by 15 hours/month.</li>
                         <li>Implemented lifecycle policies that saved <strong>$20K+ AUD</strong> in orphaned storage costs.</li>
-                        <li>Achieved 100% Disaster Recovery compliance for 100+ critical VMs using Azure Site Recovery.</li>
+                        <li>Reduced mean time to resolution (MTTR) by 35% through custom monitoring and dashboards.</li>
                     </ul>
                 </div>
             </section>
 
             <section>
-                <h2 class="section-title">M.Tech Project</h2>
-                <div class="card bg-white p-4 border-start border-4 border-primary">
-                    <h6 class="fw-bold">Automated SPN Expiry Notification</h6>
-                    <p class="small">Built a PowerShell runbook in Azure Automation using Microsoft Graph API to proactively notify owners of expiring Service Principal credentials, ensuring zero downtime.</p>
-                    <a href="https://github.com/sasafiyullah/Bits-final-year-Project" class="btn btn-sm btn-outline-primary" target="_blank">View Repository</a>
+                <h2 class="section-title">Education</h2>
+                
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="fw-bold">M.Tech in Computing Systems & Infrastructure</h5>
+                        <span class="text-muted">Nov 2025</span>
+                    </div>
+                    <p class="mb-1"><strong>BITS Pilani University</strong> | CGPA: 7.5</p>
+                    
+                    <div class="card bg-light p-3 border-start border-4 border-primary mt-2">
+                        <h6 class="fw-bold mb-1">Project: Automated SPN Expiry Notification</h6>
+                        <p class="small mb-2">Developed a PowerShell runbook in Azure Automation to scan Service Principals and notify owners via Microsoft Graph API.</p>
+                        <a href="https://github.com/sasafiyullah/Bits-final-year-Project" class="btn btn-sm btn-outline-primary" style="max-width: 150px;" target="_blank">View Repository</a>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="fw-bold">B.Sc in Computer Science</h5>
+                        <span class="text-muted">May 2021</span>
+                    </div>
+                    <p><strong>The New College, Royapettah</strong> | Score: 70%</p>
                 </div>
             </section>
         </div>
